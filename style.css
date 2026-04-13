@@ -1,0 +1,428 @@
+html {
+    padding:0;
+    margin:0;
+    scroll-behavior: smooth;
+}
+/*  ======= Style the navigation bar ========== */
+nav {
+    display: flex;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+}
+
+#about, #interest, #education, #contact {
+    scroll-margin-top: 70px;
+}
+div.logo {
+    flex: 1;
+    padding: 14px 16px;
+}
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul li a {
+   text-decoration: none;
+   display: block;
+    padding: 14px 16px;
+    color : black
+}
+nav li a:hover {
+  background-color: #555555;
+  color: white;}
+
+/* ============ Style halaman 1 =========== */
+header {
+    padding-top: 120 px;
+    padding-left: 120px;
+    padding-bottom: 20px;
+}
+div.content {
+    display: flex;
+    width: 100%;
+    height: 600px;
+    align-items: center;
+    padding-top: 0;
+    gap: 60px;
+   
+}
+div.profile{
+    margin-right: 20px;
+    padding-left: 50px;
+}
+
+.gelar{
+    font-family: 'Playfair Display', serif;
+    color: var(--accent);
+    padding-right: 50px;
+    font-size: 12px;
+    gap : 10px;
+    letter-spacing: 0.2em;
+
+    
+}
+div.bio h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    max-width: 480px;
+}
+
+.bio h1 em{
+    color: rgb(103, 78, 32);
+}
+
+div.bio p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    color: black;
+    padding-right: 50px;
+    max-width: 480px;
+}
+
+/* ========== Style halaman 2 =========== */
+
+div.halaman2{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+.h2r{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+div.h2r h2 {
+    color: black;
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    padding-left: 90px;
+    padding-right: 90px;
+    max-width: 480px;
+}
+div.h2r p{
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    max-width: 480px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+.hobbies-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-bottom: 30px;
+}
+
+.hobbies-card{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.hobbies-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+.hobbies-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hobbies-title p{
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.02em;
+   
+}
+
+.hobbies-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: 0.5s;
+}
+
+.hobbies-description{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding-top: 20px;
+}
+.hobbies-description-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    gap: 400px;
+}
+.hobbies-description-item img{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    justify-content: center;
+    
+}
+.hobbies-description-item img :hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: 0.5s;
+}
+
+.hobbies-description-text{
+    max-width: 400px;
+}
+
+.hobbies-description-text h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: black;
+    font-style: italic
+}
+
+.hobbies-description-text p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    color: black;
+}
+.button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.study-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #f4f4f4 ;
+}
+.study-list{
+    list-style-type: none;
+}
+
+.study-title{
+    display: grid;
+    justify-content: center;
+}
+.study-title h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    padding-top: 50px;
+}
+.study-title em{
+    color: rgb(103, 78, 32);
+}
+.study-list p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.study-item{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 22px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.study-name{
+    font-size: 18px;
+    color: #333;
+    letter-spacing: -0.01em;
+}
+
+.study-item .study-name :hover{
+    color:  rgb(103, 78, 32);
+    transition: 0.5s;
+}
+.study-year{
+    font-size: 16px;
+    color: #666;
+    letter-spacing: 0.02em;
+    padding-right: 20px;
+}
+
+/*=========== Style Typography Design ===========*/
+.typography-title p{
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.10em;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+.typography-title h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    padding-left: 40px;
+}
+.typography-title em{
+    color: rgb(103, 78, 32);
+}
+.typography-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #f4f4f4 ;
+}
+.typography-item2 li{
+    list-style-type: none;
+}
+.typography-item2 img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    cursor: pointer;
+}
+.typography-item2 img:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: 0.5s;
+}
+.more-typography{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+
+/* Style contact me */
+
+
+.quote{
+    padding: 100px 60px;
+    text-align: center;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+.quote ::before{
+    content: '\201C';
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Playfair Display', serif;
+    font-size: 300px;
+    color: rgba(0,0,0,0.1);
+    line-height: 1;
+    z-index: 0;
+}
+.quote h2{
+    position: relative;
+    z-index: 1;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(20px, 3vw, 32px);
+    font-style: italic;
+    font-weight: 400;
+    color: var(--ink);
+    max-width: 760px;
+    margin: 0 auto;
+    line-height: 1.6;
+   
+}
+.halaman4{
+    background-color: rgb(35, 34, 34);
+    padding: 60px 60px;
+}
+.halaman4 h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    color: white;
+    padding-bottom: 0px;
+}
+.halaman4 h2 em{
+    color: rgb(103, 78, 32);
+}
+.halaman4 p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    color: white;
+    padding-bottom: 20px;
+    letter-spacing: 0.10em;
+    padding-top: 5px;
+}
+.contact-list{
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0px;
+    padding-top: 30px;
+}
+.contact-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    border: 1px solid #333;
+    border-radius: 999px;
+    text-decoration: none;
+    color: white;
+    font-family: system-ui, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: transparent;
+    transition: border-color 0.25s ease, background-color 0.25s ease;
+}
+.contact-item:hover{
+    border-color: rgb(103, 78, 32);
+    background-color: rgb(103, 78, 32);
+    transform: translateY(-2px);
+}
+.contact-item img{
+   width: 20px; 
+   height: 20px; 
+   object-fit: contain; 
+   filter: invert(1);
+}
+.footer{
+    background: rgb(35, 34, 34);
+    padding: 40px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.footer p{
+    font-size: 13px;
+    color: rgba(245,240,232,0.4);
+}
+
+
+
