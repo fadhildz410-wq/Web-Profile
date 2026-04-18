@@ -273,6 +273,73 @@ body {
     padding-right: 20px;
 }
 
+/* ========== Organisasi ============= */
+.organisasi{
+    background-color: white;
+    padding: 20px;
+}
+.organisasi-title{
+    display: grid;
+}
+.organisasi-title h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    padding-left: 40px;
+}
+.organisasi-title em{
+    color: rgb(103, 78, 32);
+}
+.organisasi-title p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    color: black;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+.organisasi-list{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+.organisasi-item{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    width: 80%;
+    cursor: pointer;
+}
+.organisasi-item:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: 0.5s;
+}
+.organisasi-item img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    justify-content: center;
+}
+.organisasi-name{
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: black;
+    padding-top: 10px;
+    font-style: italic;
+    padding-bottom: 0px;
+}
+.organisasi-position{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    color: black;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
 /*=========== Style Typography Design ===========*/
 .typography-title p{
     font-size: 14px;
