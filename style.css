@@ -424,13 +424,30 @@ body {
     padding-top: 5px;
 }
 
-.organitation-extra{
-     max-height: 0;
+.organitation-extra {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: white;
+    justify-content: center;
+    max-width: 100%;
+
+    /* Tersembunyi saat pertama dimuat */
+    max-height: 0;
     overflow: hidden;
     opacity: 0;
     transition: max-height 0.7s ease, opacity 0.7s ease, padding 0.7s ease;
 }
 
+.organitation-extra.expanded {
+    max-height: 2000px; /* Sesuaikan dengan jumlah konten */
+    opacity: 1;
+    padding: 20px;
+}
+
+
+/* ============================== POP UP ========================= */
 .modal-overlay {
     display: none;
     position: fixed;

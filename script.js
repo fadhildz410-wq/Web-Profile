@@ -56,13 +56,14 @@ const orgExtra = document.getElementById('org-extra')
 btn.addEventListener('click', function(e) {
     e.preventDefault();
 
-    const OrgExpanded = extra.classList.contains('expanded');
+    const OrgExpanded = orgExtra.classList.contains('expanded');
 
     if (OrgExpanded) {
         // Tutup kembali
         orgExtra.classList.remove('expanded');
         btn.textContent = 'Show More';
-    } else {
+    } 
+    else {
         // Buka dan tampilkan gambar tambahan
         orgExtra.classList.add('expanded');
         btn.textContent = 'Show Less';
@@ -74,16 +75,20 @@ btn.addEventListener('click', function(e) {
     }
 });
 
-// =============================== SURAT (POPUP) ================================
+// =============================== (POP UP) ================================
 
-const PopupBtn = document.getElementById('btn');
+const ProgramBtn = document.getElementById('btn');
+const daftarBtn = document.getElementById('btn-daftar')
 const modalOverlay = document.getElementById('modal-overlay');
 const modalClose = document.getElementById('modal-close');
 
 
 
 // Buka modal saat tombol "BACA" diklik
-PopupBtn.addEventListener('click', function () {
+ProgramBtn.addEventListener('click', function () {
+    modalOverlay.classList.add('modal-open');
+});
+daftarBtn.addEventListener('click', function () {
     modalOverlay.classList.add('modal-open');
 });
 
