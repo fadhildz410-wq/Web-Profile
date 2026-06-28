@@ -4,6 +4,7 @@
     <title>Fadhil Dzaki Faiz - Portofolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/jpg" href="image/Flame - Letter F Logos.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -11,15 +12,24 @@
 <!--================= Navbar =============== -->
     <nav>
     <div class = "logo">
-            <img src="image/Flame - Letter F Logos.jpg" alt="Logo" width="61">
+            <img src="image/Flame - Letter F Logos.jpg" alt="Logo" width="50">
         </div>
     <ul>
         <li><a href="#about">About</a></li>
+        <li><a href="#myskill">Skill</a></li>
         <li><a href="#interest">Interest</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
+
+<section>
+    <div class="home fade-in">
+        <h1>
+            <em>PORTO</em>FOLIO
+        </h1>
+    </div>
+</section>
 
 <!--================= Halaman 1 ================-->
 <section class="about" id="about">
@@ -40,7 +50,35 @@
 </div>
 </section>
 
-<!--================= Halaman 2 ================-->
+<section class="myskill" id="myskill">
+    <div class="skill-page">
+        <h1 class="fade-in" style="--delay: 0.1s;">My <em>Skill</em></h1>
+        <ul class="skill-element">
+                <li class="skill-grid fade-in" style="--delay: 0.1s;">
+                    <div class="skill-grid-contain">
+                        <img src="image/Python.png" alt="skill-img1">
+                        <h2 class="skill-title">Machine Learning</h2>
+                    </div>
+                </li>
+                <li class="skill-grid fade-in" style="--delay: 0.1s;">
+                    <div class="skill-grid-contain">
+                        <img src="image/Pixellab.png" alt="skill-img2">
+                        <img src="image/CANVA.png" alt="skill-img2">
+                        <h2 class="skill-title">Design</h2>  
+                    </div>
+                </li>
+                <li class="skill-grid fade-in" style="--delay: 0.1s;">
+                    <div class="skill-grid-contain">
+                        <img src="image/HTML.png" alt="skill-img3">
+                        <img src="image/CSS.png" alt="skill-img3">
+                        <h2 class="skill-title">Web Developer</h2>  
+                    </div>
+                </li>
+        <ul>
+    </div>
+</section>
+
+<!--===================================== Halaman 2 =============================-->
 
 <div class="halaman2">
 <section class="interest" id="interest">
@@ -51,7 +89,7 @@
         Typography design, on the other hand, allows me to explore creativity through visual aesthetics and communication.</p>
     </div>
 
-    <!--================= Hobbies and Education ================-->
+    <!--============================ Hobbies and Education =========================-->
 
     <ul class="hobbies-grid">
         <li class="hobbies-card fade-in" style="--delay: 0.1s;">
@@ -81,7 +119,7 @@
             <h3>Programming</h3>
             <p>I am passionate about programming and enjoy solving complex problems through code. 
                 I have experience in various programming languages and frameworks.</p>
-            <a href="#" class="button">Programming Projects</a>
+            <a href="#" class="button" id="btn">Programming Projects</a>
         </div>
             <img src="image/programming.jpeg" alt="Programming Image" width="400">
     </li>
@@ -91,7 +129,7 @@
             <h3>Reading</h3>
             <p>I am passionate about reading and enjoy exploring different genres and authors. 
                 Reading helps me expand my knowledge and imagination.</p>
-            <a href="#" class="button">Daftar Buku</a>
+            <a href="#" class="button" id="btn">Daftar Buku</a>
         </div>
             <img src="image/reading.jpeg" alt="Reading Image" width="400">
     </li>
@@ -101,12 +139,29 @@
             <h3>Typography</h3>
             <p>I am passionate about typography design and enjoy creating visually appealing and functional type layouts. 
                 I have experience in various typography techniques and software.</p>
-            <a href="#typography" class="button">Typography Design</a>
+            <a href="#typography" class="button" id="btn">Typography Design</a>
         </div>
             <img src="image/download (3).jpg" alt="Typography Image" width="400">
     </li>
 </ul>
 
+
+<!-- =============================== POP UP ================================ -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-box">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <h2 class="modal-title">Programming Project</h2>
+            <div class="modal-body">
+                <p>
+                    I am passionate about programming and enjoy solving complex problems through code. 
+                    I have experience in various programming languages and frameworks. 
+                    I have worked on several projects, including web development, mobile app development, and data analysis. 
+                    I am always looking for new challenges and opportunities to improve my skills and knowledge in programming.
+                </p>
+            </div>
+        </div>
+    </div>
+ <!--============================== PAGE STUDY ============================-->
     <section class="education" id="education">
         <div class="education-grid">
             <div>
@@ -138,7 +193,7 @@
     </section>
 </div>
 
-<!--============== Organization ================-->
+<!--====================== PAGE ORGANISASI ================-->
 
 <section class="organisasi">
     <div class="organisasi-title fade-in">
@@ -166,6 +221,62 @@
                 <p class="organisasi-position">Divisi Riset dan Materi</p>
             </li>
         </ul>
+
+
+    <div class="organitation-extra" id="org-extra">
+        <ul class="organisasi-list">
+            <li class="organisasi-item fade-in" style="--delay: 0.1s;">
+                <img src="image/OSIS.jpeg" alt="OSIS">
+                <h3 class="organisasi-name">OSIS</h3>
+                <p class="organisasi-position">Ketua OSIS</p>
+
+            </li>
+            <li class="organisasi-item fade-in" style="--delay: 0.2s;">
+                <img src="image/DA.jpeg" alt="Dewan Ambalan">
+                <h3 class="organisasi-name">Dewan Ambalan</h3>
+                <p class="organisasi-position">Divisi Penelitian dan Evaluasi</p>
+            </li>
+            <li class="organisasi-item fade-in" style="--delay: 0.3s;">
+                <img src="image/COM.jpeg" alt="COM">
+                <h3 class="organisasi-name">Panitia Class of Mind</h3>
+                <p class="organisasi-position">Divisi Riset dan Materi</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="more-typography">
+        <a href="#" class="button" id="btn-organitation">Show More</a>
+    </div>
+
+    
+</section>
+
+
+<!--====================== PAGE PROJECT =========================-->
+<section class="page-project">
+    <div class="project-contain">
+        <div class="project-title">
+            <h2>My <br><em>Project</em></h2>
+        </div>
+
+        <div class="project-grid">
+            <li class="project-img">
+                <img src="projectimage" alt="projectimage">
+            </li>
+            <li class="project-img">
+                <img src="projectimage" alt="projectimage">
+            </li>
+            <li class="project-img">
+                <img src="projectimage" alt="projectimage">
+            </li>
+            <li class="project-img">
+                <img src="projectimage" alt="projectimage">
+            </li>
+            <li class="project-img">
+                <img src="projectimage" alt="projectimage">
+            </li>
+
+        </div>
     </div>
 </section>
 
@@ -205,9 +316,40 @@
         </div>
     </div>
 
-    <div class="more-typography">
-        <a href="https://pin.it/5DrpC34zc" class="button">More Typography Design</a>
+    <div class="typography-extra" id="extra">
+        <div class="typography-item2">
+            <img src="image/typ-7.jpeg" alt="typography-6">
+        </div>
+        <div class="typography-item2">
+            <img src="image/typ-8.jpeg" alt="typography-7">
+        </div>
+        <div class="typography-item2">
+            <img src="image/typ-9.jpeg" alt="typography-8">
+        </div>
+        <div class="typography-item2">
+            <img src="image/typ-10.jpeg" alt="typography-9">
+        </div>
+        <div class="typography-item2">
+            <img src="image/typ-11.jpeg" alt="typography-10">
+        </div>
+        <div class="typography-item2">
+            <img src="image/typ-12.jpeg" alt="typography-10">
+        </div>
+        <div class="typography-item2">
+            <img src="image/typ-13.jpeg" alt="typography-10">
+        </div>
+        <div class="typography-item2">
+            <img src="image/iamge-3.jpeg" alt="typography-10">
+        </div>
+        <div class="typography-item2">
+            <img src="image/typ-11.jpeg" alt="typography-10">
+        </div>
     </div>
+
+    <div class="more-typography">
+        <a href="#" class="button" id="btn-more">Show More</a>
+    </div>
+
 
 </div>
 </section>
@@ -231,8 +373,8 @@
             Instagram</a>
         </li>
         <li class="fade-in" style="--delay: 0.2s;">
-            <a href="https://www.tiktok.com/" class="contact-item"><img src="image/tiktok.png" alt="tiktok" width="50">
-             Tiktok</a>
+            <a href="https://github.com/fadhildz410-wq" class="contact-item"><img src="image/Download GitHub Logo, Git Hub Icon On White Background.jpg" alt="github" width="50">
+             GitHub</a>
         </li>
         <li class="fade-in" style="--delay: 0.3s;">
             <a href="https://wa.me/6288216376365" class="contact-item"><img src="image/whatsap.png" alt="whatsapp" width="50">
